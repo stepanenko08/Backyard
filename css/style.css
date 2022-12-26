@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+  font-family: 'TextaMedium';
+  src: url('../fonts/TextaMedium.ttf');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrap{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__nav{
+  background-color: #ce3434;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header__log{
+  width: 210px;
+  height: 80px;
+}
+
+.header__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.slider__title{
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 95px;
+  top: 50%;
+  max-width: 1400px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  z-index: 2;
+}
+.header__menu-link{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.btn{
+  background-color: #f3cb38;
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+.header__btn{
+  margin-left: 20px;
+  background-color: #f3cb38;
+  padding: 10px 20px;
+}
+
+.find{
+  padding: 60px 0;
+  border-top: 10px solid #da3028;
+  border-bottom: 10px solid #da3028;
+}
+
+.find__title{
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  color: #da3028;
+  text-align: center;
+  padding-bottom: 30px;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+.find__desc{
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'TextaMedium';
+  padding-bottom: 40px;
+}
+
+.find__btn{
+  background-color: #da3028;
+  border: none;
+  width: 200px;
+  padding: 15px 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.find__btn:hover{
+  background-color: #f3cb38;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Слайдер */
+.slick-slider{
+  position: relative;
+  height: 100%;
+}
+.slider__item{
+  position: relative;
+  height: 100vh;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+  position: absolute;
+  top: calc(50% - 30px) ;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  border: none;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+  left: 30px;
+  background: url('../img/arr-prev.svg') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+  right: 30px;
+  background: url('../img/arr-prev.svg') 0 0 / 100% no-repeat;
+  transform: rotate(180deg);
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+.slider__btn{
+  bottom: 50px;
+  position: absolute;
+  left: calc(50% - 100px);
+  z-index: 2;
+  border: none;
+  width: 200px;
+  padding: 15px 0;
+}
